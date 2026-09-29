@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Books</title><link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><style>
+.side{background:#ffe8c7;min-height:100vh}
+.side h1{color:#2b2540;font-size:1.5rem;margin:0 0 16px}
+ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+a{display:flex;align-items:center;gap:14px;padding:10px 14px 10px 10px;background:#fff;border-radius:22px;color:#2b2540;text-decoration:none;font-weight:800;border:3px solid transparent;box-shadow:0 4px 12px rgba(80,50,120,.10);transition:transform .15s}
+a:hover{transform:translateX(4px)}
+a:focus-visible{outline:3px solid #2b2540;outline-offset:2px}
+a.active{border-color:var(--a)}
+.thumb{flex:none;width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,var(--a),var(--b));display:grid;place-items:center;font-size:1.6rem}
+@media(prefers-reduced-motion:reduce){a{transition:none}a:hover{transform:none}}
+</style></head><body class="side"><nav class="wrap" aria-label="Book list"><h1>📖 Book shelf</h1><ul><li><a href="hobbit.html" target="detail" style="--a:#ff8a5c;--b:#ffb86b"><span class="thumb">🐉</span><span class="t">The Hobbit</span></a></li><li><a href="pride.html" target="detail" style="--a:#f25c9b;--b:#ff9bc4"><span class="thumb">💌</span><span class="t">Pride and Prejudice</span></a></li><li><a href="sapiens.html" target="detail" style="--a:#20b486;--b:#6fdcb0"><span class="thumb">🌍</span><span class="t">Sapiens</span></a></li><li><a href="prince.html" target="detail" style="--a:#8b5cf6;--b:#b9a2ff"><span class="thumb">🌹</span><span class="t">The Little Prince</span></a></li><li><a href="dune.html" target="detail" style="--a:#f5a524;--b:#ffd36b"><span class="thumb">🏜️</span><span class="t">Dune</span></a></li></ul></nav>
+<script>document.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{document.querySelectorAll("a").forEach(x=>x.classList.remove("active"));a.classList.add("active")}))</script></body></html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Book information</title>
+<style>
+html,body{height:100%;margin:0}
+.frames{display:flex;height:100%}
+iframe{border:0;height:100%}
+#list{width:320px;flex:none;border-right:4px solid #ffb86b}
+#detail{flex:1;min-width:0}
+@media(max-width:700px){.frames{flex-direction:column}#list{width:100%;height:42%;border-right:0;border-bottom:4px solid #ffb86b}#detail{height:58%}}
+</style></head>
+<body><div class="frames">
+<iframe id="list" src="list.html" title="Book list"></iframe>
+<iframe id="detail" name="detail" src="welcome.html" title="Book information"></iframe>
+</div></body></html>
